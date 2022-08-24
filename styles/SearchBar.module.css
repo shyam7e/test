@@ -1,0 +1,42 @@
+.searchBarContainer {
+  width: 600px;
+  height: 99px;
+  background-color: #ffffff;
+  box-shadow: 0 3 #ff7070;
+  border: #707070;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.input {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+  color: #2e266f;
+  font-size: 23px;
+  font-family: "Poppins", sans-serif;
+  padding-left: 50px;
+  position: absolute;
+}
+.input::placeholder {
+  color: #2e266f;
+}
+.submitButton {
+  width: 206px;
+  height: 86px;
+  border-radius: 100px 0 0 0;
+  background-color: #fe043c;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+  margin-right: 8px;
+  border: none;
+}
+.goText {
+  font-size: 33px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  text-transform: capitalize;
+}

@@ -1,0 +1,18 @@
+.cityTagContainer {
+  background-color: #fe043c;
+  border-radius: 0 40px 40px 0px;
+  height: 88px;
+  width: 450px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+.cityTagText {
+  font-size: 31px;
+  font-weight: 500;
+  font-family: "Poppins", sans-serif;
+  text-transform: capitalize;
+}
