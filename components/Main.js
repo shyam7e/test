@@ -25,7 +25,7 @@ const Main = () => {
     <>
       <div className={styles.mainContainer}>
         <div className={styles.foodOverlay}>
-          <Image src={FoodOverlay}></Image>
+          <Image src={FoodOverlay} alt="image"></Image>
           <div
             style={{
               position: "relative",
@@ -41,12 +41,12 @@ const Main = () => {
         </div>
 
         <div className={styles.foodImage}>
-          <Image src={FoodImage} layout="responsive"></Image>
+          <Image src={FoodImage} layout="responsive" alt="image" />
           <div className={styles.image}>
-            <Image src={FoodDots} width={415}></Image>
+            <Image src={FoodDots} width={415} alt="image" />
           </div>
           <div className={styles.image2}>
-            <Image src={FoodDots} width={415}></Image>
+            <Image src={FoodDots} width={415} alt="image" />
           </div>
         </div>
       </div>
@@ -62,8 +62,9 @@ const Main = () => {
           </span>
         </div>
         <div style={{ display: "flex" }}>
-          {cardDetails.map((item) => (
+          {cardDetails.map((item, i) => (
             <FoodCard
+              key={i}
               image={item.image}
               title={item.title}
               description={item.description}
